@@ -145,6 +145,7 @@ double TabletFilterSmoothing::SetPosition(double x, double y, double h) {
 	this->position.x = x;
 	this->position.y = y;
 	this->z = h;
+	return 0.0;
 }
 
 

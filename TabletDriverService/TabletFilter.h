@@ -6,9 +6,10 @@ public:
 	virtual bool GetPosition(Vector2D *vector) = 0;
 	virtual void Update() = 0;
 
-	HANDLE timer;
-	WAITORTIMERCALLBACK callback;
-	double timerInterval;
+	void (*callback)();
+	float timerInterval;
+
+ 	HANDLE thread;
 
 	bool isEnabled;
 	bool isValid;
@@ -19,4 +20,3 @@ public:
 	bool StopTimer();
 
 };
-

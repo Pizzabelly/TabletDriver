@@ -212,7 +212,7 @@ void RunTabletThread() {
 //
 // Tablet filter timer callback
 //
-VOID CALLBACK FilterTimerCallback(_In_ PVOID lpParameter, _In_ BOOLEAN TimerOrWaitFired) {
+void FilterTimerCallback() {
 	Vector2D position, position_prev;
 	double z;
 	TabletFilter *filter;
